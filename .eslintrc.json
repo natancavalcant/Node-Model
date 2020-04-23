@@ -5,6 +5,7 @@
     "node": true
   },
   "extends": ["standard", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
   "globals": {
     "Atomics": "writable",
     "SharedArrayBuffer": "writable"
@@ -12,5 +13,7 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
-  "rules": {}
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
